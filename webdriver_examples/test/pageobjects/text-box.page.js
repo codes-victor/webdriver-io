@@ -11,11 +11,11 @@ class TextBoxPage {
     }
 
     get inputCurrentAddress () {
-        return $('#currentAddress');
+        return $('(//*[@id="currentAddress"])[1]');
     }
 
     get inputPermanentAddress () {
-        return $('#permanentAddress');
+        return $('(//*[@id="permanentAddress"])[1]');
     }
 
     get btnSubmit () {
@@ -26,6 +26,21 @@ class TextBoxPage {
         return $('//*[@id="app"]/div/div/div/div[2]/h1');
     }
 
+    get resFullName () {
+        return $('#name');
+    }
+
+    get resEmail () {
+        return $('#email');
+    }
+
+    get resCurrentAddress () {
+        return $('(//*[@id="currentAddress"])[2]');
+    }
+
+    get resPermanentAddress () {
+        return $('(//*[@id="permanentAddress"])[2]');
+    }
 
     async fill_form(fullname, email, caddress, paddress){
 
@@ -38,7 +53,6 @@ class TextBoxPage {
     async click_submit_btn(){
         await this.btnSubmit.click()
     }
-
 
 }
 export default new TextBoxPage();
