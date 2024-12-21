@@ -14,6 +14,5 @@ class ElementsPage {
         return browser.url('https://demoqa.com/elements')
     }
 
-    
 }
 export default new ElementsPage();
