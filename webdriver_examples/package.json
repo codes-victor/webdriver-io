@@ -1,0 +1,10 @@
+{
+  "name": "webdriver_examples",
+  "type": "module",
+  "devDependencies": {
+    "@wdio/cli": "^9.4.5",
+    "@wdio/local-runner": "^9.4.5",
+    "@wdio/mocha-framework": "^9.4.4",
+    "@wdio/spec-reporter": "^9.4.4"
+  }
+}
